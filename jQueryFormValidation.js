@@ -1,6 +1,6 @@
 /**
 * Jquery Simple Form Validation
-* @author Brewww Interactive
+* @author Brewww Interactive <hakan@brewww.com>
 * @package Jquery  < 1.9
 * @company Vw
 */
