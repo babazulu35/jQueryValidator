@@ -5,16 +5,30 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" href="">
+
 </head>
 <body>
 <div>
-	<form action="">
-		<input type="text">
-		<input type="text">
-		<input type="text">
-		<input type="button">
+	<form action="#" data-vwvalidate='{"inputType":"submit"}'> <!-- Input Type Seçilmesi Zorunludur  -->
+		<input id="name" type="text" data-options='{"required":true,"messageDiv":"hakan","flashMessage":"HSalaksın"}'>
+		<div id="hakan">
+			
+		</div>
+		<input id="surname" type="text" data-options='{"required":true,"messageDiv":"asdasda","flashMessage":"hello world"}'>
+		<div id="asdasda">
+			
+		</div>
+		<input  id="lastname" type="text" data-options='{"required":true,"messageDiv":"fuckyou","flashMessage":"kamikaze"}'>
+		<div id="fuckyou">
+			
+		</div>	
+		<input type="submit" value="Gönder">
 	</form>
 </div>
-	
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="jQueryFormValidation.js"></script>
+	<script>
+		$('form').vwformvalidation();
+	</script>
 </body>
 </html>
